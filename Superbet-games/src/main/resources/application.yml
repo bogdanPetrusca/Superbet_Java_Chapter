@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: kafka
+  application:
+    name: Superbet-games
+  kafka:
+    bootstrap-servers: localhost:9092
+server:
+  port: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
